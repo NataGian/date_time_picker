@@ -771,6 +771,7 @@ class _DateTimePickerState extends FormFieldState<String> {
     final ltTimePicked = await showTimePicker(
       context: context,
       initialTime: _tTime,
+      confirmText: widget.confirmText,
       initialEntryMode: widget.timePickerEntryModeInput
           ? TimePickerEntryMode.input
           : TimePickerEntryMode.dial,
@@ -850,6 +851,7 @@ class _DateTimePickerState extends FormFieldState<String> {
       final ltTimePicked = await showTimePicker(
         context: context,
         initialTime: _tTime,
+        confirmText: widget.confirmText,
         initialEntryMode: widget.timePickerEntryModeInput
             ? TimePickerEntryMode.input
             : TimePickerEntryMode.dial,
